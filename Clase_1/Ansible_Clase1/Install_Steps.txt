@@ -1,0 +1,12 @@
+1- En /etc/apt/sources.list:
+
+deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main
+
+2- Luego agregamos la key para dicho repositorio:
+
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367
+
+3- Por último actualizamos los repositorios e instalamos Ansible:
+
+apt-get update
+apt-get install ansible -y
